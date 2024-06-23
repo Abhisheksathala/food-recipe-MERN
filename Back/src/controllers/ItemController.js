@@ -6,14 +6,12 @@ const getAllItems = async (req, res) => {
 
     // Check if items array is empty
     if (items.length === 0) {
-      return res.status(404).json({ error: "No items found" });
+      return res.status(404).json({ error: "No items found", success: false });
     }
-    console.log("====================================");
-    console.log(items);
-    console.log("====================================");
 
     // If items found, return them
     return res.status(200).json({
+      success: true,
       items: items,
       message: "Items retrieved successfully",
     });
