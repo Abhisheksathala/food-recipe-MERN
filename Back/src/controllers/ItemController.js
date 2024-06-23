@@ -18,8 +18,8 @@ const getAllItems = async (req, res) => {
       message: "Items retrieved successfully",
     });
   } catch (error) {
-    // Handle database errors or other unexpected errors
-    console.error("Error in getAllItems:", error.message);
+    // Handle database errors or other unexpected erraors
+    console.error("Error in getAllItems:", error);
     return res.status(500).json({ error: "Internal server error at getitmes" });
   }
 };
@@ -55,16 +55,16 @@ const getSingleItem = async (req, res) => {
 
   try {
     const item = await ItemModel.findById(id);
-    
+
     if (!item) {
-      return res.status(404).json({success: false, error: "Item not found" });
+      return res.status(404).json({ success: false, error: "Item not found" });
     }
 
     return res.status(200).json({
       success: true,
       item: item,
       message: `Item retrieved successfully`,
-    })
+    });
   } catch (error) {}
 };
 

@@ -1,6 +1,8 @@
 import React from "react";
 import Hero from "../../components/Herro/Hero";
 import CategoryWarpper from "../../components/CategoryWarpper/CategoryWarpper";
+import FeaturSection from "../../components/featurSection/FeaturSection";
+import LatestRespices from "../../components/LatestRecipes/LatestRespices";
 
 const Home = () => {
   return (
@@ -9,6 +11,12 @@ const Home = () => {
         <Hero />
         <CategoryWarpper />
       </div>
+
+      {/* <fatureSection /> */}
+
+      <FeaturSection />
+
+      <LatestRespices />
     </div>
   );
 };
