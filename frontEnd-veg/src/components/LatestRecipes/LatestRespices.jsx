@@ -38,7 +38,7 @@ const LatestRecipes = () => {
           <p>No items found</p>
         )}
       </div>
-      <div className="mx-auto mt-16">
+      <div className="mx-auto mt-16 flex items-center justify-center">
         <Button
           variant="contained"
           color="primary"

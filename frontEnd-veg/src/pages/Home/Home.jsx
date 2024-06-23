@@ -3,6 +3,7 @@ import Hero from "../../components/Herro/Hero";
 import CategoryWarpper from "../../components/CategoryWarpper/CategoryWarpper";
 import FeaturSection from "../../components/featurSection/FeaturSection";
 import LatestRespices from "../../components/LatestRecipes/LatestRespices";
+import NewsLetter from './../../components/NewsLetter/NewsLetter';
 
 const Home = () => {
   return (
@@ -17,6 +18,8 @@ const Home = () => {
       <FeaturSection />
 
       <LatestRespices />
+
+      <NewsLetter />
     </div>
   );
 };
