@@ -6,6 +6,7 @@ import LatestRespices from "../../components/LatestRecipes/LatestRespices";
 import NewsLetter from "./../../components/NewsLetter/NewsLetter";
 import AboutSection from "../../components/About/AboutSection";
 import LogoSection from './../../components/LogoSection/LogoSection';
+import Subscription from './../../components/Subscribtion/Subscription';
 
 const Home = () => {
   return (
@@ -20,6 +21,7 @@ const Home = () => {
       <NewsLetter />
       <AboutSection />
       <LogoSection />
+      <Subscription />
     </div>
   );
 };
