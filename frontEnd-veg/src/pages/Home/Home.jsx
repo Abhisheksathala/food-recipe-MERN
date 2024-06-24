@@ -5,6 +5,7 @@ import FeaturSection from "../../components/featurSection/FeaturSection";
 import LatestRespices from "../../components/LatestRecipes/LatestRespices";
 import NewsLetter from "./../../components/NewsLetter/NewsLetter";
 import AboutSection from "../../components/About/AboutSection";
+import LogoSection from './../../components/LogoSection/LogoSection';
 
 const Home = () => {
   return (
@@ -18,6 +19,7 @@ const Home = () => {
       <LatestRespices />
       <NewsLetter />
       <AboutSection />
+      <LogoSection />
     </div>
   );
 };
